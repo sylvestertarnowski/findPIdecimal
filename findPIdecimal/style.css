@@ -1,0 +1,9 @@
+body {
+  background-color:lightgrey;
+  padding:30px;
+  font-family:'Roboto', sans-serif;
+}
+input {
+  padding:5px;
+  font-size:15px;
+}
