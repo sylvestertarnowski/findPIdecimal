@@ -1,9 +1,59 @@
+@keyframes submit {
+  0% {background-color:red;}
+  25% {background-color:green;}
+  50% {background-color:yellow;}
+  75% {background-color:blue;}
+  100% {background-color:red;}
+}
 body {
   background-color:lightgrey;
   padding:30px;
   font-family:'Roboto', sans-serif;
+  text-align:center;
 }
 input {
-  padding:5px;
-  font-size:15px;
+  padding:7px;
+  font-size:16px;
+}
+h2 {
+  text-align:center;
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  background-color:darkgrey;
+  display:inline-block;
+  position:relative;
+  color:ghostwhite;
+}
+p {
+  padding:10px;
+  border-radius:10px;
+  background-color:darkgrey;
+  display:inline-block;
+  position:relative;
+  color:ghostwhite;
+}
+input#submitButton {
+  text-decoration-style:none;
+  border:none;
+  border-radius:3px;
+  padding:7px;
+  margin-top: 5px;
+  color:ghostwhite;
+  text-shadow:1px 1px 0px #000;
+  letter-spacing: 0.6px;
+  background-color:red;
+  animation-name:submit;
+  animation-duration:10s;
+  animation-delay:1s;
+  animation-iteration-count:infinite;
+}
+div#PI {
+  margin:10px 0px;
+  padding:10px;
+  border-radius:10px;
+  background-color:darkgrey;
+  position:relative;
+  color:ghostwhite;
+  word-wrap:break-word;
 }
