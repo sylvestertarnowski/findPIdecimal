@@ -6,12 +6,18 @@
       <meta charset="utf-8">
     </head>
     <body>
-      <h3>Calculate PI number to nth decimal!</h3>
-      <p>In the from below, specify to which decimal number should the PI be displayed.
-      Note that the maximum number that will be processed is 129.
-      The app will inform you if you happen to type a higher number.</p>
-      <input placeholder="How many decimals...?" id="decimals"><br>
-      <h4 id="finalPi"></h4>
+        <h2>Calculate PI number to nth decimal!</h2>
+        <p>In the from below, specify to which decimal number should the PI be displayed.
+        Note that the maximum number that will be processed is 100.
+        The app will inform you if you happen to type a higher (or lower!) number.</p>
+      <form class="my-form">
+        <input type="text" placeholder="How many decimals...?" id="decimals"/>
+        <input onclick="doSomething();" type="button" value="Submit" id="submitButton"/>
+      </form>
+      <div id="PI">
+        <h3>Your PI number:</h3>
+        <h4 id="finalPi"></h4>
+      </div>
     </body>
     <script src="main.js"></script>
 </html>
